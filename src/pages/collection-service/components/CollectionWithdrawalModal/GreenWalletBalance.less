@@ -1,0 +1,37 @@
+.component{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    .main{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .greenBox{
+            padding: 10px;
+            background-color: #BFE7C3;
+            border: 1px solid #03580c;
+            width: fit-content;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            .amount{
+                margin-top: 10px;
+                font-weight: bold;
+                font-size: 20px;
+                display: inline-block;
+
+            }
+        }
+    }
+    :global{
+        .ant-card-body{
+            width: 100%;
+        }
+    }
+
+}
+.tooltip{
+     word-wrap: break-word;
+     white-space: pre-wrap;
+}

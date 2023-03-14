@@ -1,0 +1,23 @@
+export default {
+  'menu.home': 'Home',
+  'menu.login': 'Log in',
+  'menu.exception.403': '403',
+  'menu.exception.404': '404',
+  'menu.exception.500': '500',
+  'menu.my-profile': 'Account information',
+  'menu.my-notification': 'My notification',
+  'menu.payment-page-config': 'Payment page setting',
+  'menu.balance-management': 'Merchant wallet',
+  'menu.term-condition': 'Term and Condition ',
+  'menu.disbursement': 'Disbursement service',
+  'menu.collection-service': 'Collection service',
+  'menu.change-password': 'Change password',
+  'menu.logout': 'Logout',
+  'menu.account': 'Account',
+  'menu.account.myProfile': 'Account information',
+  'menu.account.balanceManagement': 'Merchant wallet',
+  'menu.account.changePassword': 'Change password',
+  'menu.account.paymentPageConfig': 'Payment page seting',
+  'menu.account.logout': 'Log out',
+
+};

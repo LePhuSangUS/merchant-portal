@@ -1,0 +1,27 @@
+@import '../../../../themes/vars.less';
+
+.modal{
+    .viewPermissionBlock{
+        position: absolute;
+        right: 0;
+        z-index: 999;
+    }
+.viewPermissionTable{
+    color:@fill-primary-100;
+    text-decoration: underline;
+    margin-left: 5px;
+    cursor: pointer;
+}
+:global{
+    .ant-form-item{
+        width: 100%;
+    }
+    .ant-form-item-required{
+        flex-direction: row-reverse;
+        &::before{
+          margin-left: 5px;
+        }
+      }
+}
+
+}

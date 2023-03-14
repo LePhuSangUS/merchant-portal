@@ -1,0 +1,84 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 30px 40px;
+  background: #fff;
+  border: 1px solid #b9cddc;
+  border-radius: 5px;
+  box-shadow: 0 0 1em -0.3em #0f3d5f;
+  :global {
+    .icon {
+      margin-right: 4px;
+      color: #666;
+      font-size: 1em;
+    }
+    .msg {
+      padding: 25px 0 50px;
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: pre-line;
+      text-align: center;
+      &.invalid {
+        color: #f00;
+      }
+    }
+    .success-msg {
+      padding: 15px 0 45px;
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: pre-line;
+      text-align: center;
+    }
+    .error-msg {
+      padding: 0 0 10px;
+      color: #f00;
+      font-size: 15px;
+      white-space: pre-line;
+      text-align: center;
+    }
+    .pwd-btn {
+      width: 100%;
+      margin: 10px 0 0;
+    }
+    .tab-content {
+      margin: 15px 0 0;
+    }
+    .btn-wrap {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin: 1em 0 0;
+      .home-btn {
+        margin-top: 1.75em;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+    .register {
+      float: right;
+    }
+  }
+}

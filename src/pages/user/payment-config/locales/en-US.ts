@@ -1,0 +1,16 @@
+export default {
+  'user.payment.config.title': 'Customize the appearance of the payment page',
+  'user.payment.config.preview.title': 'Preview',
+  'user.payment.config.bgColor.label': 'Background color',
+  'user.payment.config.logo.label': 'Brand logo',
+  'user.payment.config.logo.required.message': 'Please upload Logo!',
+  'user.payment.config.defaultLang.label': 'Default language',
+  'user.payment.config.defaultLang.placeholder': 'Select default language',
+  'user.payment.config.defaultLang.required.message': 'Please select default language!',
+  'user.payment.config.defaultLang.tooltip': 'Default language will be used for the checkout page if the customer does not select their language',
+  'user.payment.config.success.message': 'You have submitted a request to edit the interface of the bar page!',
+  'user.payment.config.failed.message': 'Save and submit failed!',
+  'user.payment.config.unchanged.message': 'No information changed, please check again!',
+  'user.payment.config.maximum': 'maximum',
+  'user.payment.config.minimum': 'minimum',
+};

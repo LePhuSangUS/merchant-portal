@@ -1,0 +1,57 @@
+export default {
+  'disbursement.disbursement_service_overview': 'Disbursement Service Overview:',
+  'disbursement.disbursement_service_overview__description': "Merchants can send disbursement request through NeoX Disbursement Service to bank accounts of partners and/or suppliers.",
+  'disbursement.term_and_condition': 'Terms and Conditions:',
+  'disbursement.service_registration': 'Start Registration' ,
+  'disbursement.service_registration_confirm__description': 'Disbursement Service Registration Confirmation.',
+  'disbursement.bank_name': 'Bank name',
+  'disbursement.account_number': 'Account number',
+  'disbursement.beneficiary_unit': 'Account name',
+  'disbursement.transfer_content': 'Transfer details',
+  'disbursement.use_api': 'Use APIs',
+  'disbursement.url_receive_limit_fluctuations': 'URL to receive change notifications on limits',
+  'disbursement.secret_key': 'Secret Key ',
+  'disbursement.secret_key_Noted': "Use the value of the parameters received in the above URL (Arrange the keys of the parameters in alphabetical order, minus the \"sign\" parameters) + this Secret Key value at the end of the string and hash the whole string according to the SHA256 algorithm (base64), you will get the same value as the \"sign\" parameter. If it does not match, the limit change message is not from NeoX.",
+  'disbursement.notification': 'Notification',
+  'disbursement.urlInvalid': 'Invalid path. Similar link format: https://www.neopay.vn',
+  'disbursement.Registration_Failed': 'Registration failed. Please try again',
+  'disbursement.Registration_Success': 'Registration success.',
+  'disbursement.Disbursement_Active': 'Activate the disbursement service  ',
+  'disbursement.Foreign_Currency': 'Currency',
+  'disbursement.Currency_Code': 'Currency code',
+  'disbursement.Exchange_Rate': 'Exchange rate',
+  'disbursement.VND_Value': 'Disbursement value VND',
+  'disbursement.Agree_Term_And_Condition': 'Agree to the terms & conditions',
+  'disbursement.Activate_Foreign_Currency_Limit': 'Activate foreign currency limit',
+  'disbursement.Adjust_Limit_Notification': 'Adjust limit notification',
+  'disbursement.Warning_Amount': 'Warning limit',
+  'disbursement.Email_Notification': 'Email to receive warning',
+  'disbursement.Pending': 'Pending',
+  'disbursement.Activate_Foreign_Currency_Limit_Success': 'Activate foreign currency limit success',
+  'disbursement.Adjust_Limit_Notification_Success': 'Adjust limit notification success',
+  'disbursement.Support_File': 'Only .pem files are supported',
+
+
+
+
+
+
+  //======================
+'disbursement.SFTP_Registration_Title': 'Register to receive the disbursement reconciliation report via SFTP',
+'disbursement.Recive_SFTP': 'Receive reconciliation report via SFTP',
+'disbursement.Host_Name': 'Host name',
+'disbursement.Port_Number': 'Port number',
+'disbursement.Directory_Path': 'Directory path',
+'disbursement.Connect_Method': 'Connection method',
+'disbursement.Account': 'Account',
+'disbursement.Password': 'Password',
+'disbursement.Check_Connection': 'Check connection',
+'disbursement.Contains_Only_Numbers': 'contains only numbers',
+'disbursement.Private_Key_API': 'Private key file',
+'disbursement.Passphrase': 'Passphrase',
+'disbursement.SFTP_Registration_Success': 'Successfully registered to receive the results of peer service verification via SFTP',
+'disbursement.Test_SFTP_Success': 'Successful connection',
+'disbursement.Test_SFTP_Fail': 'Failed connection. Reason {reason}',
+"disbursement.AnErrorOccurred": "An error occurred. Please try again",
+  
+};

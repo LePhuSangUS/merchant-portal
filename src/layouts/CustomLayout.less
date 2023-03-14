@@ -1,0 +1,345 @@
+@primary-color: #764cf0;
+@secondary-color: #f1edfd;
+
+.menu-right-border {
+    &::before {
+        transform: scaleY(0.0001);
+        opacity: 0;
+        transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-right: 4px solid #764cf0;
+        border-radius: 0 10px 10px 0;
+        content: '';
+    }
+}
+
+.active-menu-style(@color) {
+    font-weight: bold;
+    background-color: #f1edfd;
+    border-radius: 0 10px 10px 0;
+
+    .ant-menu-title-content .ant-pro-menu-item {
+        color: @color;
+    }
+}
+
+.menu-right-border-active {
+    .active-menu-style(@primary-color);
+
+    &::after {
+        border-right: none;
+    }
+
+    &::before {
+        transform: scaleY(1);
+        opacity: 1;
+        transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+}
+
+
+// ------------- HEADER -------------
+.neo-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+// site
+.neo-site-layout {
+    background: #f3f3f9;
+    transition: all 0.2s;
+}
+
+// ------------- MENU -------------
+
+.neo-custom-layout {
+    background: #f3f3f9;
+    :global {
+
+        .ant-layout-sider {
+            box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+            z-index: 99;
+        }
+
+        .sider__menu-container {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            overflow: overlay;
+            height: calc(100vh - 65px);
+
+            &::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            &:hover {
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #ccc;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #aaa;
+            }
+        }
+
+        // ẩn avatar frame
+        .ant-layout-sider-collapsed {
+            .profile__avatar--simple {
+                .avatar__frame {
+                    display: none;
+                }
+            }
+        }
+
+        .sider__menu {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            padding-right: 6px;
+
+            // ẩn header của nhóm submenu khi chưa collapsed
+            .ant-menu-item-group-title {
+                display: none;
+            }
+
+            // ẩn hiện icon menu item
+            .ant-menu-item {
+
+                .ant-menu-title-content {
+                    .neo-menu-icon-purple {
+                        display: none;
+                    }
+
+                    .neo-menu-icon-gray,
+                    .neo-menu-icon-purple {
+                        margin-right: 10px;
+                    }
+                }
+
+                &-selected,
+                &-active {
+                    .ant-menu-title-content {
+                        .neo-menu-icon-gray {
+                            display: none;
+                        }
+
+                        .neo-menu-icon-purple {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+            }
+
+            // ẩn hiện icon submenu wrapper
+            .ant-menu-submenu {
+                .ant-menu-submenu-title {
+                    .ant-menu-title-content {
+                        .neo-menu-icon-purple {
+                            display: none;
+                        }
+
+                        .neo-menu-icon-gray,
+                        .neo-menu-icon-purple {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    // expand icon
+                    .neo-menu-icon-down {
+                        display: none;
+                    }
+                }
+
+                &-open,
+                &-selected,
+                &-active {
+                    .ant-menu-submenu-title {
+                        .ant-menu-title-content {
+                            .neo-menu-icon-gray {
+                                display: none;
+                            }
+
+                            .neo-menu-icon-purple {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+
+                &-open {
+                    .ant-menu-submenu-title {
+
+                        // expand icon
+                        .neo-menu-icon-right {
+                            display: none;
+                        }
+
+                        .neo-menu-icon-down {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+
+            // style nhóm submenu, menuitem
+            >.ant-menu-item {
+                padding-left: 16px !important;
+                margin-bottom: 10px !important;
+
+                // text and icon is vertical center
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                display: flex;
+                align-items: center;
+            }
+
+            .ant-menu-submenu {
+                margin-bottom: 10px !important;
+
+                .ant-menu-submenu-title {
+                    padding-left: 16px !important;
+                    padding-right: 20px !important; // for expand icon
+                    height: 40px !important;
+
+                    // text and icon is vertical center
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important;
+                    display: flex;
+                    align-items: center;
+                }
+
+                // background submenu
+                &-open {
+                    .ant-menu-sub.ant-menu-inline {
+                        background: transparent;
+                    }
+
+                    background-color: rgba(118, 76, 240, .05);
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+
+            .ant-menu-submenu {
+                .ant-menu-sub {
+                    .ant-menu-item-group-list {
+                        .ant-menu-item {
+                            padding-left: 16px !important;
+                            margin-top: 10px !important;
+                        }
+                    }
+                }
+            }
+
+            // hiệu ứng hover, selected, active của menuitem
+            .ant-menu-item {
+                .menu-right-border();
+
+                &-selected,
+                &-active {
+                    .menu-right-border-active();
+                }
+            }
+
+            // hiệu ứng hover, selected, active của submenu
+            .ant-menu-submenu {
+                .ant-menu-submenu-title {
+                    .menu-right-border();
+                }
+
+                &-open,
+                &-active {
+                    .ant-menu-submenu-title {
+                        .menu-right-border-active();
+                        color: @primary-color;
+                    }
+                }
+
+                &-selected {
+                    .ant-menu-submenu-title {
+                        .menu-right-border-active();
+                        color: #2a2a2a;
+                    }
+                }
+            }
+
+
+            // menu collapsed
+            &.ant-menu-inline-collapsed {
+
+                // ẩn text menu item
+                .ant-menu-item {
+                    .ant-menu-title-content {
+                        a {
+                            display: none;
+                        }
+                    }
+                }
+
+                // ẩn text sub menu wrapper
+                .ant-menu-submenu {
+                    .ant-menu-submenu-title {
+                        .ant-menu-title-content {
+                            span {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                // padding icon
+                .ant-menu-item {
+                    .ant-menu-title-content {
+
+                        .neo-menu-icon-gray,
+                        .neo-menu-icon-purple {
+                            margin-left: 5px
+                        }
+                    }
+                }
+
+                .ant-menu-submenu {
+                    .ant-menu-submenu-title {
+                        .ant-menu-title-content {
+
+                            .neo-menu-icon-gray,
+                            .neo-menu-icon-purple {
+                                margin-left: 5px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // drawer for mobile
+        .custom-drawer {
+            .ant-drawer-content-wrapper {
+                .ant-drawer-wrapper-body {
+                    .ant-drawer-body {
+                        padding: 0
+                    }
+
+                    .ant-drawer-header {
+                        position: absolute;
+                        margin-top: 6px;
+                        margin-left: -12px;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

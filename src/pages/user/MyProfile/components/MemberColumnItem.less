@@ -1,0 +1,25 @@
+@import '../../../../themes/vars.less';
+
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  .avatar{
+    margin-right: 10px;
+  }
+  .contentBlock{
+    text-align: start;
+width:calc(100% - 50px);
+
+    .fullName{
+      @typography-md-body-bold();
+      color:@text-primary;
+
+    }
+    .roleName{
+      @typography-md-body();
+      color:@text-secondary;
+
+    }
+  }
+}

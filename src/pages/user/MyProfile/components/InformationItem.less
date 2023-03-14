@@ -1,0 +1,33 @@
+@import '../../../../themes/vars.less';
+
+.component {
+  padding: 24px;
+  &:not(:last-child){
+    @border-bottom-custom();
+
+  }
+  .title{
+    @typography-md-header();
+
+  }
+  .item{
+    display: flex;
+    align-items: start;
+    margin: 18px 0;
+    .icon{
+      margin-right: 10px;
+    }
+    .contentBlock{
+      .label{
+        @typography-md-body();
+        color:@text-secondary;
+
+      }
+      .content{
+        @typography-md-body();
+        color:@text-primary;
+
+      }
+    }
+  }
+}

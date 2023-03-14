@@ -1,0 +1,94 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+
+  .title{
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  :global {
+    .icon {
+      margin-right: 4px;
+      color: #666;
+      font-size: 1em;
+    }
+    .success-msg {
+      padding: 15px 0 45px;
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: pre-line;
+      text-align: center;
+    }
+    .error-msg {
+      padding: 0 0 10px;
+      color: #f00;
+      font-size: 15px;
+      white-space: pre-line;
+      text-align: center;
+    }
+    .pwd-btn {
+      width: 100%;
+      margin: 10px 0 0;
+    }
+    .tab-content {
+      margin: 15px 0 0;
+    }
+    .reg-btn{
+      font-weight: bold;
+      
+    }
+    .register-btn{
+      width: 190px;
+    }
+
+    .reg-btn:hover {
+      text-decoration: underline;
+    }
+    .login-bottom {
+      padding: 2em 0 0;
+      text-align: center;
+      &--break-line {
+        display: block;
+      }
+      @media (min-width: 480px) {
+        &--break-line {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 60px;
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+    .register {
+      float: right;
+    }
+  }
+}

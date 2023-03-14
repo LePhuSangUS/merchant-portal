@@ -1,0 +1,56 @@
+.detailHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 1em;
+    border-bottom: 1px solid #ddd;
+
+    :global {
+        .header--title {
+            position: relative;
+            font-weight: 700;
+            font-size: 1em;
+            line-height: 1.4;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.detailFieldContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailFieldItem {
+    flex: 1;
+
+    +hr {
+        margin: 0.9em 0;
+        border: none;
+        border-top: 1px solid #eee;
+    }
+
+    // +hr {
+    //     &:last-child {
+    //         display: none;
+    //     }
+    // }
+
+    :global {
+        .detail-field---content {
+            word-wrap: 'break-word';
+            white-space: 'pre-line';
+        }
+    }
+}
+
+
+.detailContent {
+    margin-top: 1.5em
+}
+
+.detailFooter {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}

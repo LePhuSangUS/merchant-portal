@@ -1,0 +1,36 @@
+@import '../../themes/vars.less';
+
+.component{
+  
+
+          :global{
+        .ant-picker{
+            border-radius: 6px ;
+            border: @border-solid-style  ;
+
+          }
+          .ant-picker-focused,  .ant-picker:hover{
+            border-color: #9e79fc;
+            .range-picker-icon{
+
+              filter: invert(60%) sepia(51%) saturate(6762%) hue-rotate(223deg) brightness(85%) contrast(100%);   
+             }
+          }
+          
+          
+          .ant-form-item-control-input,
+          .ant-form-item-control-input-content,
+          .ant-input-affix-wrapper,
+          .ant-input,
+          .ant-picker,
+          .ant-select-selector,
+          .ant-input-affix-wrapper-status-error
+          
+          {
+            background-color: #fff !important;
+            border-radius: 6px !important;
+          }
+          
+    }
+
+}

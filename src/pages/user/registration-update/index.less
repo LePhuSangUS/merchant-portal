@@ -1,0 +1,60 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  width: 100%;
+  :global {
+    .wrapper,
+    .msg-wrapper {
+      width: 95%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2em 3em;
+      background: #fff;
+      border: 1px solid #b9cddc;
+      border-radius: 5px;
+      box-shadow: 0 0 1em -0.3em #0f3d5f;
+      .btn-wrap {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        margin: 1.5em 0 0;
+        place-content: space-between;
+        .home-btn{
+          font-weight: bold;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .ant-picker {
+        width: 100%;
+      }
+    }
+    .msg-wrapper {
+      padding: 5em 0 7em;
+      font-size: 1.2em;
+      line-height: 2;
+      white-space: pre-line;
+      text-align: center;
+      &.invalid {
+        width: 50%;
+        max-width: 500px;
+        color: #f00;
+      }
+    }
+    .note-wrapper {
+      text-align: left;
+      color: #f00;
+      white-space: pre-wrap;
+    }
+    .icon {
+      margin-right: 4px;
+      color: #666;
+      font-size: 1em;
+    }
+
+    .hidden-drag-area {
+      display: none;
+    }
+  }
+}

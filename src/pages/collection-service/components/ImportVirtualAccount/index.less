@@ -1,0 +1,42 @@
+.import-modal {
+    &__upload-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16pt;
+        margin-top: 20px;
+    }
+
+    &__excel-table {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+
+        th,
+        td {
+            padding: 6px 12px;
+
+            &:not(:last-child) {
+                border-right: 1px solid rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        thead {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        tbody {
+            tr {
+                &:nth-child(2n+1) {
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+            }
+        }
+    }
+}
+
+.line-clamp-notice {
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

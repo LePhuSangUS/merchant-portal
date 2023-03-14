@@ -1,0 +1,41 @@
+@import '../../../../themes/vars.less';
+
+.component {
+  position: relative;
+  .skeleton,.empty{
+    margin:20px;
+    width: 80%;
+  }
+  .merchantInformationOverview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    // border-bottom:@border-dashed-style;
+
+    @border-bottom-custom();
+
+
+    .avatar{
+      margin-top: -30px;
+      box-shadow: @avatar-shadow;
+      border-radius: 100%;
+      padding: 5px;
+      background-color: #fff;
+      height: fit-content;
+    }
+    .name{
+      @typography-md-title();
+      margin-top:20px;
+      padding: 0 20px;
+       text-align: center
+    }
+    .position{
+      @typography-md-body();
+      color: @text-secondary;
+      margin:10px 0 20px 0;
+
+    }
+  }
+ 
+}

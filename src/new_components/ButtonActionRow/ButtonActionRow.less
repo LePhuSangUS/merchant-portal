@@ -1,0 +1,21 @@
+@import '../../themes/vars.less';
+
+.component {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  @typography-md-body();
+  cursor: pointer;
+
+  img {
+    margin-right: 10px;
+  }
+  &:hover{
+    background-color: @fill-primary-10;
+  }
+}
+.inactive {
+}
+.delete {
+  color: @fill-sub-green-100;
+}

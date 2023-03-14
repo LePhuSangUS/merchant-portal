@@ -1,0 +1,31 @@
+.formAddressDropdown {
+    margin: 0px 10px;
+    width: 100%;
+    > div {
+        --padding: 15px;
+        overflow: auto;
+        width: 100vw;
+        padding-bottom: var(--padding);
+        padding-right: var(--padding);
+
+        :global {
+            .ant-cascader-menus {
+                min-width: 500px;
+                .ant-cascader-menu {
+                    flex: none;
+                }
+            }
+        }
+    }
+}
+
+.formAddress {
+    :global {
+        .ant-select-selection-item {
+            line-height: normal !important;
+            white-space: normal;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

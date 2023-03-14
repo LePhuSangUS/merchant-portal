@@ -1,0 +1,70 @@
+.paymentTable {
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    margin-top: 15px;
+
+    :global {
+        tr {
+
+            td,
+            th {
+                padding: .5em;
+            }
+
+            th {
+                font-weight: 400;
+                text-align: left;
+            }
+
+            td {
+                border: 1px solid #ddd;
+                vertical-align: text-top;
+                &:first-child {
+                    border-right: none;
+                    + td {
+                        border-left: none;
+                    }
+                }
+            }
+        }
+
+        .ant-switch-checked {
+            background-color: #1890ff;
+        }
+    }
+}
+
+.paymentInfo {
+    :global {
+        .info-title {
+            display: flex;
+            justify-content: space-between;
+        }
+        .edit-icon {
+            font-size: 20px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.noticeModal {
+    :global {
+        .ant-modal-confirm-title {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .ant-modal-confirm-content {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .ant-modal-confirm-btns {
+            float: none;
+            text-align: center;
+        }
+    }
+}

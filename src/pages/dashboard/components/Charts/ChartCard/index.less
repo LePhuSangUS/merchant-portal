@@ -1,0 +1,95 @@
+@import '~antd/es/style/themes/default.less';
+
+.chartCard {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .chartTop {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .chartTopMargin {
+    margin-bottom: 12px;
+  }
+  .title{
+    display: flex;
+    align-items: center;
+  }
+  .chartTopHasMargin {
+    margin-bottom: 20px;
+  }
+  .metaWrap {
+    // float: left;
+    width: 100%;
+    white-space: nowrap;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+  .avatar {
+    position: relative;
+    top: 4px;
+    float: left;
+    margin-right: 20px;
+    img {
+      border-radius: 100%;
+    }
+  }
+  .meta {
+    height: 22px;
+    color: @text-color-secondary;
+    font-size: @font-size-base;
+    line-height: 22px;
+  }
+  .action {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .total {
+    margin-top: .3em;
+    margin-bottom: 0;
+    // overflow: hidden;
+    color: @heading-color;
+    font-size: 2em;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+    // word-break: break-all;
+    width: 100%;
+    @media (min-width: @screen-md) {
+      font-size: 1.5em;
+    }
+    @media (min-width: @screen-xl) {
+      font-size: 1.5em;
+    }
+    @media (min-width: @screen-xxl) {
+      font-size: 2em;
+    }
+  }
+  .content {
+    position: relative;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .contentFixed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .footer {
+    margin-top: 8px;
+    padding-top: 9px;
+    border-top: 1px solid @border-color-split;
+    & > * {
+      position: relative;
+    }
+  }
+  .footerMargin {
+    margin-top: 1em;
+  }
+}

@@ -1,0 +1,211 @@
+@import '~antd/es/style/themes/default.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+@primary-color: #764cf0;
+@secondary-color: #f1edfd;
+
+.menu {
+  font-family: 'Montserrat';
+  margin-top: 10px;
+  padding: 16px 0;
+  border-radius: 10px;
+  width: 290px;
+
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+
+  :global(.ant-dropdown-menu-item) {
+    min-width: 160px;
+  }
+
+  :global {
+    .menu {
+      &__item {
+        height: 40px;
+        font-size: 14px;
+
+        .ant-dropdown-menu-title-content {
+          display: flex;
+          align-items: center;
+          color: #2a2a2a;
+
+          .neo-svg-icon {
+            margin-right: 10px;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        span {
+          font-weight: 500;
+        }
+
+        &.ant-dropdown-menu-item-active,
+        &--active {
+          background-color: @secondary-color;
+
+          .ant-dropdown-menu-title-content {
+            color: @primary-color;
+          }
+
+          .neo-svg-icon {
+            background: @primary-color !important;
+          }
+
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.right {
+  display: flex;
+  float: right;
+  height: 48px;
+  margin-left: auto;
+  overflow: hidden;
+
+  .action {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    >span {
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+
+  .search {
+    padding: 0 12px;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .account {
+    .avatar {
+      margin:~'calc((@{layout-header-height} - 24px) / 2)' 0;
+      margin-right: 8px;
+      margin-left: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.dark {
+  .action {
+    color: rgba(255, 255, 255, 0.85);
+
+    >span {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    &:hover,
+    &:global(.opened) {
+      background: @primary-color;
+    }
+  }
+}
+
+:global(.ant-pro-global-header) {
+  .dark {
+    .action {
+      color: @text-color;
+
+      >span {
+        color: @text-color;
+      }
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.85);
+
+        >span {
+          color: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+  }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: unset;
+}
+
+.header__switch-language {
+  width: 40px;
+  height: 40px !important;
+  border-radius: 50%;
+  margin: auto;
+
+  &:hover {
+    background-color: #f7f5fb !important;
+    background: #f7f5fb !important;
+  }
+}
+
+.header__noti-icon {
+  width: 40px;
+  height: 40px !important;
+  border-radius: 50%;
+  margin: auto;
+  justify-content: center;
+
+  &:hover {
+    background-color: #f7f5fb !important;
+    background: #f7f5fb !important;
+  }
+
+
+
+  :global {
+
+    .ant-badge {
+      padding: 4px 10px;
+
+      sup {
+        border-radius: 5px;
+        background: #f76176;
+        height: 17px;
+        font-family: 'Montserrat';
+        line-height: 17px;
+        font-weight: 500;
+        padding: 0px 8px 0 8px;
+      }
+    }
+  }
+}
+
+.header__noti-icon--active {
+  :global {
+    .neo-svg-icon {
+      background: @primary-color !important;
+    }
+  }
+}
+
+.header-avatar-dropdown {
+  &:hover {
+    background-color: #f7f5fb !important;
+    background: #f7f5fb !important;
+  }
+}

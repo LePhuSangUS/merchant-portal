@@ -1,0 +1,66 @@
+.container {
+  :global {
+    .card-header {
+      display: flex;
+      column-gap: .5em;
+      div {
+        margin-left: 1.5em;
+        &:first-child {
+          margin: 0;
+        }
+      }
+    }
+    .item-title {
+      display: inline-block;
+      display: -webkit-box;
+      cursor: pointer;
+      transition: all .15s ease-out;
+      line-height: 1.4;
+      max-height: 4.2em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-clamp: 3;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      &:hover {
+        color: #f00;
+      }
+    }
+    .icon-read,
+    .icon-unread {
+      &::before {
+        display: inline-block;
+        content: '';
+        width: .7em;
+        height: .7em;
+        margin-right: .5em;
+        background-color: #c0ddd9;
+        border-radius: 100px;
+        overflow: hidden;
+      }
+    }
+    .icon-unread::before {
+      background-color: #f00;
+    }
+    .list-wrap {
+      margin: 1em 0 0;
+      padding: 0 1em;
+    }
+    .list-item {
+      padding: 1.5em 0;
+    }
+    .item-content {
+      display: block;
+      display: -webkit-box;
+      line-height: 1.4;
+      max-height: 8.4em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-clamp: 6;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+

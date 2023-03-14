@@ -1,0 +1,59 @@
+.container {
+  :global {
+    .card-mt {
+      margin-top: 1.5em;
+    }
+    .empty-msg {
+      padding: 1em 0 2em;
+      text-align: center;
+    }
+    hr {
+      margin: 0.9em 0;
+      border: none;
+      border-top: 1px solid #eee;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 0 1em;
+      border-bottom: 1px solid #ddd;
+      @media (max-width: 767px) {
+        flex-direction: column;
+        .btns {
+          margin-top: 1em;
+        }
+      }
+      .title {
+        position: relative;
+        font-weight: 700;
+        font-size: 1em;
+        line-height: 1.4;
+        text-transform: uppercase;
+      }
+    }
+    .content {
+      padding-top: 1.5em;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .avatar {
+      overflow: hidden;
+      border-radius: 100%;
+      box-shadow: 0 0 1em 0 #ccc;
+    }
+    .right-col {
+      @media (max-width: 767px) {
+        margin-top: 30px;
+      }
+    }
+    @media (min-width: 768px) {
+      .tab {
+        padding: 0 20px;
+      }
+      .tab-content {
+        padding: 0 20px;
+      }
+    }
+  }
+}

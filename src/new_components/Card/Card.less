@@ -1,0 +1,17 @@
+@import '../../themes/vars.less';
+
+.component {
+    box-shadow:  @box-shadow-base;
+    :global{
+        .ant-card-body{
+            padding: 0 !important;
+        }
+
+    }
+    .title{
+        padding: 24px;
+        @border-bottom-custom();
+    }
+
+}
+

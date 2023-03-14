@@ -1,0 +1,6 @@
+export { DetailHeader } from './DetailHeader'
+export { DetailFieldItem } from './DetailFieldItem'
+export { DetailContent } from './DetailContent'
+export { DetailFooter } from './DetailFooter'
+export * from './DetailEmpty'
+export * from './DetailPage'

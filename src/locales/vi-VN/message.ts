@@ -1,0 +1,25 @@
+export default {
+  'message.processing': 'Đang xử lý...',
+  'message.create.success': 'Tạo mới thành công',
+  'message.create.error': 'Tạo mới thất bại',
+  'message.update.success': 'Cập nhật thành công',
+  'message.success': 'Thành công',
+  'message.error': 'Thất bại',
+  'message.update.error': 'Cập nhật thất bại',
+  'message.delete.success': 'Xóa thành công',
+  'message.delete.error': 'Xóa thất bại',
+  'message.upload.success': 'Đã được tải thành công',
+  'message.upload.error': 'Tải lên thất bại',
+  'message.upload.maximum': 'Chỉ được upload tối đa {maxCount} hình',
+  'message.uploadAvatar.errorFile': 'Chỉ cho phép tải hình ảnh có định dạng JPG/PNG!.',
+  'message.uploadAvatar.errorSize1M': 'Kích thước hình ảnh phải nhở hơn 1MB!',
+  'message.upload.maxSize': 'Vui lòng chọn file có kích thước < {maxSize}MB',
+  'message.upload.fileType.error': 'Định dạng file không hợp lệ',
+
+  'message.hooks.sysconfig.success': 'Lấy dữ liệu tham số hệ thống thành công',
+  'message.hooks.sysconfig.error': 'Lấy dữ liệu tham số hệ thống thất bại',
+  'message.request.internetDisconnectedError': 'Truy cập vào {pageName} thất bại. Vui lòng thử lại sau.',
+  'message.request.getError': 'Lấy dữ liệu thất bại. Vui lòng thử lại sau.',
+  'message.An_Error_Occurred_Please_Try_Again': 'Có lỗi xảy ra. Vui lòng thử lại',
+
+}

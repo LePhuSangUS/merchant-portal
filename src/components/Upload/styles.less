@@ -1,0 +1,36 @@
+.customUpload {
+  :global {
+    .ant-upload-list-picture-card {
+      margin-top: 8px;
+    }
+    .errorContent {
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+    }
+    .ant-message-custom-content {
+      display: flex;
+    }
+  }
+}
+
+.customErrorMessage {
+  :global {
+    .ant-message-custom-content {
+      display: flex;
+      align-items: center;
+      .anticon-close {
+        color: rgba(0, 0, 0, 0.45);
+        &:hover {
+          color: #40a9ff;
+        }
+      }
+    }
+  }
+}
+
+.error {
+  & > span > div[class~='ant-upload-drag'] {
+    border-color: #ff4d4f !important;
+  }
+}

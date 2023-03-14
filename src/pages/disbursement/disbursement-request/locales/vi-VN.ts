@@ -1,0 +1,25 @@
+export default {
+  "Disbursement_Request.Merchant": "Tài khoản merchant",
+  "Disbursement_Request.Date": "Ngày",
+  "Disbursement_Request.CreationTime": "Thời gian tạo",
+  "Disbursement_Request.Ref_Code": "Mã tham chiếu",
+  "Disbursement_Request.Request_Code": "Mã yêu cầu",
+  "Disbursement_Request.Transaction_Code": "Mã giao dịch",
+  "Disbursement_Request.Amount": "Tổng số tiền",
+  "Disbursement_Request.Bank": "Ngân hàng thụ hưởng",
+  "Disbursement_Request.Branch": "Chi nhánh",
+  "Disbursement_Request.Account_Number": "Số tài khoản",
+  "Disbursement_Request.Account_Name": "Tên tài khoản",
+  "Disbursement_Request.Status": "Trạng thái",
+  "Disbursement_Request.Updated_At": "Ngày cập nhật",
+  "Disbursement_Request.Content": "Nội dung thanh toán",
+  "Disbursement_Request.Reason": "Lý do thất bại",
+  "Disbursement_Request.Noted": "Ghi chú",
+  "Disbursement_Request.Understand": "Tôi đã hiểu",
+  
+  "Disbursement_Request.Create_Disbursement_Request": "Tạo yêu cầu chi hộ",
+  "Disbursement_Request.An_Error_Occurred": "Có lỗi xảy ra . Vui lòng thử lại",
+  "Disbursement_Request.Import_Success": "Chúng tôi đã tiếp nhận yêu cầu của bạn và đang xử lý yêu cầu. ",
+  "Disbursement_Request.lineError": "Yêu cầu của bạn đang sai cấu trúc hoặc thiếu thông tin",
+
+};

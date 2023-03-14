@@ -1,0 +1,166 @@
+@import '~antd/es/style/themes/default.less';
+.modalConfirmEkyc{
+  :global{
+    .ant-modal-confirm-btns{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+
+
+.container {
+  width: 100%;
+  .warning{
+    color: #faad14;
+  }
+
+  .titleSuccess{
+    font-weight: bold;
+     font-size: 20px;
+     text-transform: uppercase;
+  }
+  :global {
+    .wrapper,
+    .success-msg {
+      width: 95%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2em 1.5em;
+      border-radius: 40px;
+      box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.08);
+      background-color: #fff;
+      .btn-wrap {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        margin: 1.5em 0 0;
+        place-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+        .home-btn{
+          font-weight: bold;
+          margin-top: 24px;
+        }
+        .home-btn:hover {
+          text-decoration: underline;
+        }
+      }
+      .ant-picker {
+        width: 100%;
+      }
+      .recapcha-container {
+        text-align: center;
+        margin-right: -10px;
+        transform: scaleX(0.8) translate(12%, 0);
+        @media (min-width: 370px) {
+          transform: unset;
+        }
+        @media (min-width: 400px) {
+          margin-right: 0;
+        }
+      }
+      @media (min-width: 768px) {
+        padding: 2em 3em;
+        .btn-wrap {
+          flex-direction: row;
+          .home-btn {
+            margin-top: 0;
+          }
+        }
+        .recapcha-container {
+          text-align: right;
+        }
+      }
+    }
+    .success-msg {
+      padding: 2em 0 3em;
+      font-size: 1.2em;
+      text-align: center;
+      &--desc {
+        padding: 0 15px;
+      }
+
+      @media (min-width: 768px) {
+        padding: 5em 0 7em;
+        line-height: 2;
+        &--desc {
+          white-space: pre;
+        }
+      }
+    }
+    .next-btn{
+      width: 150px;
+    }
+    .icon {
+      margin-right: 4px;
+      color: #666;
+      font-size: 1em;
+    }
+    
+    .steps-props-responsive {
+      flex-direction: column;
+      .ant-steps-item-title,
+      .ant-steps-item-tail {
+        &::after {
+          display: none;
+        }
+      }
+      .ant-steps-item {
+        padding-left: 0;
+      }
+      .ant-steps-item-content {
+        min-height: 48px;
+      }
+      .ant-steps-item-icon .ant-steps-icon {
+        position: relative;
+        top: -2px;
+        left: -1px;
+        line-height: 32px;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+      }
+      @media (min-width: 768px) {
+        flex-direction: row;
+        .ant-steps-item-title,
+        .ant-steps-item-tail {
+          &::after {
+            display: inline-block;
+          }
+        }
+        .ant-steps-item {
+          padding-left: 16px;
+        }
+        .ant-steps-item-content {
+          min-height: unset;
+        }
+      }
+    }
+  }
+
+  .businessType {
+    :global {
+      .ant-radio-wrapper {
+        margin-bottom: 10px;
+        @media (min-width: 768px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.showOneError {
+  :global {
+    .ant-form-item-explain .ant-form-item-explain-error:not(:last-child) {
+      display: none;
+    }
+  }
+}
+
+.businessInformationForm {
+  padding: 0;
+}

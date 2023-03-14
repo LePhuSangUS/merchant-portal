@@ -1,0 +1,38 @@
+@import '../../themes/vars.less';
+
+.component {
+    margin-left: 10px;
+    :global{
+        .ant-btn{
+            border-radius: @btn-border-radius-base;
+            border: none;
+            box-shadow: none;
+
+            span{
+            text-transform: unset !important;
+
+            }
+        }
+        .ant-btn-primary{
+            background-image: @gradient-secondary;
+            &:hover{
+                background-image: unset;
+            background-color: @shape-background-primary;
+               
+            }
+        }
+        .ant-btn-default{
+            span{
+                color: @text-primary;
+
+            }
+            background-color: @shape-background;
+            &:hover{
+                background-color: @shape-background-hover;
+               
+            }
+        }
+
+    }
+}
+
